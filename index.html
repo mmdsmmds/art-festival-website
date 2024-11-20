@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa"> <!-- Persian Language -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Festival</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Art Festival</h1>
+        <p>Browse the art pieces and rate them!</p>
+    </header>
 
+    <!-- Example artwork -->
+    <div class="artwork-container">
+        <div class="artwork" id="artwork-1">
+            <img src="path/to/your-image1.jpg" alt="Art 1">
+            <h2>Artwork Name 1</h2>
+            <p>Description of the artwork goes here.</p>
+            <form class="rate-form">
+                <input type="hidden" class="picture-id" value="1"> <!-- Picture ID -->
+                <label for="rating">Rate this artwork:</label>
+                <input type="number" class="rating" min="1" max="5" required>
+                <button type="submit">Submit Rating</button>
+            </form>
+        </div>
+
+        <!-- Add more artworks here -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JS file -->
+</body>
+</html>
