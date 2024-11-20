@@ -1,1 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl; /* Right-to-left text for Persian */
+    text-align: center;
+}
+
+header {
+    margin: 20px;
+}
+
+.artwork-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.artwork {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.artwork img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    margin-top: 10px;
+}
 
