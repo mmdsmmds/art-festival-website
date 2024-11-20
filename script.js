@@ -27,4 +27,27 @@ document.querySelectorAll('.rate-form').forEach(form => {
         alert('Rating submitted successfully');
     });
 });
+async function submitRating(pictureId, rating) {
+    const { data, error } = await supabase
+        .from('ratings')
+        .insert([{ picture_id: pictureId, rating }]);
+
+    if (error) {
+        console.error('Error submitting rating:', error.message);
+        alert('Failed to submit rating. Please try again.');
+    } else {
+        console.log('Rating submitted:', data);
+        alert('Thank you for your rating!');
+    }
+}
+<form onsubmit="handleRating(event, 1)">
+    <label for="rating">Rate this picture (1-5):</label>
+    <input type="number" id="rating" name="rating" min="1" max="5" required>
+    <button type="submit">Submit</button>
+</form>
+function handleRating(event, pictureId) {
+    event.preventDefault(); // Prevent the page from refreshing
+    const rating = event.target.rating.value; // Get the rating value from the form
+    submitRating(pictureId, parseInt(rating)); // Send the rating to Supabase
+}
 
