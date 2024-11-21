@@ -19,7 +19,8 @@
             
             // Example usage:
             let picid = getParameterByName('id'); 
-            let picsrc="/images/picture_"+picid+".jpg"
+            let picsrc="images/picture_"+picid+".jpg"
+            let picsr=picsrc
             console.log(picsrc);
     </script>
     
@@ -27,7 +28,7 @@
 <body>
     <h1>Rate This Picture</h1>
     <div id="picture-container">
-        <img id="picture" src=picsrc alt="Picture" />
+        <img id="picture" src=picsr alt="Picture" />
     </div>
     <form id="rating-form">
         <label for="rating">Rate this picture (1-5):</label>
