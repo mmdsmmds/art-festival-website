@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '/@supabase/supabase-js';
 // Functions using the Supabase client go here...
 
 const SUPABASE_URL = 'https://cqkwcvjxiqqnohjptltu.supabase.co'; // Replace with your Supabase URL
