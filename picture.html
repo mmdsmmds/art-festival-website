@@ -18,14 +18,15 @@
             }
             
             // Example usage:
-            let paramValue = getParameterByName('id'); 
-            console.log(paramValue);
-        </script>
+            let picid = getParameterByName('id'); 
+            //console.log(paramValue);
+    </script>
+    picsrc="images/picture_"+picid+".jpg"
 </head>
 <body>
     <h1>Rate This Picture</h1>
     <div id="picture-container">
-        <img id="picture" src="images/picture_1.jpg" alt="Picture" />
+        <img id="picture" src=picsrc alt="Picture" />
     </div>
     <form id="rating-form">
         <label for="rating">Rate this picture (1-5):</label>
