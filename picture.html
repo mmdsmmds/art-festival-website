@@ -16,18 +16,22 @@
               if (!results[2]) return '';
               return decodeURIComponent(results[2].replace(/\+/g, ' '));
             }
-            
-            // Example usage:
-            let picid = getParameterByName('id'); 
-            let picsrc="images/picture_"+picid+".jpg"
-            let picsr=picsrc
-            console.log(picsr);
+                
+        // Example usage:
+        let picid = getParameterByName('id'); 
+        let picsrc = "images/picture_" + picid + ".jpg";
+    
+        // Dynamically set the src attribute
+        window.onload = function () {
+            document.getElementById("picture").src = picsrc;
     </script>
     
 </head>
 <body>
-    <h1>Rate This Picture</h1>
-    <img id="picture" src=picsr alt="Picture" />
+    <h1>Rate This Picture</h1>    
+    <div id="picture-container">
+        <img id="picture" alt="Picture" />
+    </div>
     
     <form id="rating-form">
         <label for="rating">Rate this picture (1-5):</label>
