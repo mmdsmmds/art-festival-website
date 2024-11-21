@@ -20,7 +20,7 @@ function getPictureIdFromURL() {
 // Function to dynamically load the picture
 function loadPicture(pictureId) {
     const pictureElement = document.getElementById('picture');
-    pictureElement.src = `/images/picture_${pictureId}.jpg`; // Adjust the path to match your image folder
+    pictureElement.src = `images/picture_${pictureId}.jpg`; // Adjust the path to match your image folder
     pictureElement.alt = `Picture ${pictureId}`;
 }
 
