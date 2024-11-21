@@ -1,5 +1,5 @@
-import { createClient } from '/@supabase/supabase-js';
-// Functions using the Supabase client go here...
+import { createClient } from 'jsr:@supabase/supabase-js@2'
+
 
 const SUPABASE_URL = 'https://cqkwcvjxiqqnohjptltu.supabase.co'; // Replace with your Supabase URL
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNxa3djdmp4aXFxbm9oanB0bHR1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIxMjQzNzYsImV4cCI6MjA0NzcwMDM3Nn0.Y7ceexogbvVz4N0wNe0Z3l6qyVn_HgV1_6tfL-_ceVo'; // Replace with your Supabase Anon Key
