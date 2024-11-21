@@ -1,5 +1,3 @@
-// Supabase client setup
-// Import Supabase
 import { createClient } from '@supabase/supabase-js';
 
 // Supabase client setup
