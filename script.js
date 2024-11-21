@@ -1,8 +1,4 @@
 import { createClient } from '@supabase/supabase-js';
-
-// Supabase client setup
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
-
 // Functions using the Supabase client go here...
 
 const SUPABASE_URL = 'https://cqkwcvjxiqqnohjptltu.supabase.co'; // Replace with your Supabase URL
